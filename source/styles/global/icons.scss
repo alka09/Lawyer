@@ -1,15 +1,53 @@
-.icon {
-  margin: auto auto 23px auto;
+
+
+.icon-facebook {
+  @include sprite($facebook)
 }
 
-.icon-like {
-  @include sprite($like)
+.icon-facebook_white {
+  @include sprite($facebook_white)
 }
 
-.icon-book {
-  @include sprite($book)
+.icon-instagram {
+  @include sprite($instagram)
 }
 
-.icon-message {
-  @include sprite($message)
+.icon-instagram_white {
+  @include sprite($instagram_white)
+}
+
+.icon-mail_ru_white {
+  @include sprite($mail_ru_white)
+}
+
+.icon-twitter {
+  @include sprite($twitter)
+}
+
+.icon-twitter_white {
+  @include sprite($twitter_white)
+}
+
+.icon-viber_white {
+  @include sprite($viber_white)
+}
+
+.icon-vk {
+  @include sprite($vk)
+}
+
+.icon-vk_white {
+  @include sprite($vk_white)
+}
+
+.icon-hands {
+  @include sprite($hands)
+}
+
+.icon-hummer {
+  @include sprite($hummer)
+}
+
+.icon-piple {
+  @include sprite($piple)
 }

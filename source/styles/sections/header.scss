@@ -1,7 +1,6 @@
 .header {
   &__top {
-    background-color: #f0f2f4;
-    border-bottom: 1px solid #e2e2e2;
+    background-color: #D8DBE3;
   }
 
   &__bottom {
@@ -9,67 +8,55 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding: 41px 0 32px;
+    padding: 14px 0;
 
-    @media (max-width: 1000px) {
-      flex-direction: column;
-    }
+    .button {
+      @media (max-width: 1080px) {
+        margin-right: 15px;
+      }
 
-  .button {
-    @media (max-width: 1080px) {
-      margin-right: 15px;
     }
-
-    @media (max-width: 1000px) {
-      margin-right: 0;
-    }
-  }
   }
 }
 
 .contacts {
-     text-align: right;
-   }
-
-.contact {
-  display: inline-block;
-  vertical-align: top;
-  padding: 10px 10px 8px;
-  color: #424242;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 7px 6px;
   transition: 0.3s;
+  color: #282B4F;
 
   &:hover {
     color: lighten(#424242, 20%);
   }
+}
+
+.contact__text {
+  font-size: 1.125rem;
+  font-family: $ff_steps;
+  letter-spacing: 0.02em;
+  padding-left: 8px;
+}
+
+.contact,
+.contact__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 18px;
+  text-decoration: none;
 
   &:first-child {
-    margin-right: 8px;
-    padding-right: 18px;
-    border-right: 1px solid #e2e2e2;
-  }
 
-  &__icon {
-    margin-right: 7px;
-    vertical-align: middle;
-    font-size: 1.5rem;
-
-    &--email {
-      font-size: 1.2rem;
-
-    }
   }
 }
 
-.facebook-icon {
-  display: inline-block;
-  margin: 7px 0;
-  padding: 5px 8px 1px;
-  border-radius: 3px;
-  background-color: #1287bf;
-  color: #fff;
+.contact__block {
+  width: 151px;
 }
 
-.logo{
+.logo {
   @media (max-width: 1080px) {
     margin-left: 15px;
   }

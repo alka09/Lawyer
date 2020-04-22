@@ -1,93 +1,57 @@
 .approach {
   padding: 86px 0 94px;
-  background-color: #f3f3f3;
+  background-color: #E7E9EE;
 
-  &__list {
-    margin: 0;
-    padding: 0;
-    counter-reset: count;
-  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  &__item {
-    margin-bottom: 40px;
-    border-radius: 5px;
-    box-shadow: -1px -1px 10px 1px rgba(214, 214, 214, 1);
-    color: #424242;
-    background: #fff;
+    .square {
+      width: 401px;
+      height: 447px;
+      border-radius: 30px;
+      box-shadow: 0 4px 31px rgba(0, 0, 0, 0.15);
+      border: 1px solid #DEDEDE;
+      box-sizing: border-box;
+      padding: 53px 53px;
 
-    &:nth-child(2n) {
-      display: flex;
-      flex-direction: row-reverse;
-      text-align: right;
-
-      .approach__text {
-        padding: 70px 90px;
+      .title__approach {
+        padding-top: 32px;
       }
 
-      .approach__step {
-        right: auto;
-        left: 12px;
+      .title__text {
+        margin: 0;
+        padding: 24px 0;
+      }
+
+      &__pinky {
+        background: linear-gradient(233.96deg, #FFB089 -0.37%, #FFFFFF 100%);
+
+        .title__details {
+          color: #F6A278;
+        }
+      }
+
+      &__blue {
+        background: linear-gradient(233.62deg, #1B1D36 -0.37%, #667088 100%);
+
+        .title__approach {
+          color: #FFFFFF;
+        }
+
+        .title__details {
+          color: #FFFFFF;
+        }
+      }
+
+      &__white {
+        background: #FFFFFF;
+
+        .title__details {
+          color: #F6A278;
+        }
       }
     }
-  }
-
-  &__image {
-    position: relative;
-    max-width: 340px;
-    max-height: 280px;
-    display: inline-block;
-    vertical-align: top;
-  }
-
-  &__picture {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-
-  &__text {
-    display: inline-block;
-    vertical-align: top;
-    width: 64%;
-    padding: 70px 70px 55px 90px;
-    font-size: 0.875rem;
-  }
-
-  &__step {
-    @include centerer-y();
-
-    top: 30%;
-    right: -94px;
-    width: 103px;
-    height: 103px;
-    padding-top: 10px;
-    border-radius: 5px;
-    border: 2px solid #fff;
-    text-align: center;
-    font-size: 1.25rem;
-    background-color: #de2b24;
-    color: #fff;
-
-    &:before {
-      content: counter(count);
-      counter-increment: count;
-      display: block;
-      font-family: $ff_steps;
-      font-size: 3rem;
-      line-height: 1;
-      color: #fff;
-    }
-  }
-
-  &__title {
-    margin-bottom: 6px;
-    font-size: 1.125rem;
-    font-weight: bold;
-    font-family: $ff_main-bold;
-  }
-
-  &__description {
-    margin: 0;
-    line-height: 1.5;
   }
 }

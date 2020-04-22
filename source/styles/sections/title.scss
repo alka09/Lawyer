@@ -1,30 +1,32 @@
 .title {
-  margin-bottom: 65px;
+  margin-bottom: 48px;
   text-align: center;
+  font-family: $ff_main;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 64px;
+  font-weight: initial;
 
   &__header {
     margin: 0;
     font-size: 2.25rem;
-    font-family: $ff_main-bold;
     line-height: 1;
+  }
+
+  &__approach {
+    font-size: 2.125rem;
+    font-family: $ff_main-bold;
+    line-height: 34px;
   }
 
   &__text {
     font-size: 1.25rem;
-    font-family: $ff_main-light;
+    font-family: $ff_steps;
   }
 
-  &--with-bottom-line {
-    position: relative;
-
-    &:after {
-      @include centerer-x();
-
-      content: '';
-      bottom: -16px;
-      width: 47px;
-      height: 5px;
-      background: #424242;
-    }
+  &__details {
+    font-size: 1.125rem;
+    line-height: 27px;
+    font-weight: bold;
   }
 }

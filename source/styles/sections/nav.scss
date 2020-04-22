@@ -11,8 +11,11 @@
   &__link {
     display: inline-block;
     vertical-align: top;
-    padding: 10px;
-    font-family: $ff_main-bold;
+    padding: 8px;
+    font-family: $ff_main;
+    font-size: 1.3125rem;
+    line-height: 28px;
+    letter-spacing: 0.02em;
     text-decoration: none;
     text-transform: capitalize;
     color: #424242;
@@ -21,21 +24,6 @@
     &:hover,
     &--active {
       color: #de2b24;
-    }
-
-    &:after {
-      content: '';
-      display: inline-block;
-      vertical-align: middle;
-      width: 5px;
-      height: 5px;
-      margin-left: 15px;
-      border-radius: 50%;
-      background: #424242;
-    }
-
-    &:last-child:after {
-      display: none;
     }
   }
 }
