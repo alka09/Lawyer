@@ -1,59 +1,71 @@
 @font-face {
   font-family: "Mart";
-  src: url("../../fonts/Mart.otf") format("0tf");
+  src: url("../../fonts/Mart.otf") format("otf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Mart Bold";
-  src: url("../../fonts/Mart Bold.otf") format("0tf");
-  font-weight: bold;
+  font-family: "Mart 900";
+  src: url("../../fonts/Mart Fat.otf") format("otf");
+  font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Mart Book";
-  src: url("../../fonts/Mart Book.otf") format("0tf");
+  font-family: "Mart 700";
+  src: url("../../fonts/Mart Bold.otf") format("otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mart Book';
+  src: url("../../fonts/mart-book.eot");
+  src: url('../../fonts/mart-book.eot?#iefix') format('embedded-opentype'),
+       url('../../fonts/mart-book.woff2') format('woff2'),
+       url('../../fonts/mart-book.woff') format('woff'),
+       url('../../fonts/Mart Book.otf') format('otf'),
+       url('../../fonts/mart-book.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Mart Extra Bold";
-  src: url("../../fonts/Mart Extra Bold.otf") format("0tf");
+  src: url("../../fonts/Mart Extra Bold.otf") format("otf");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Mart Fat";
-  src: url("../../fonts/Mart Fat.otf") format("0tf");
+  src: url("../../fonts/Mart Fat.otf") format("otf");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Mart Heavy";
-  src: url("../../fonts/Mart Heavy.otf") format("0tf");
-  font-weight: bold;
+  src: url("../../fonts/Mart Heavy.otf") format("otf");
+  font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: "Mart Light";
-  src: url("../../fonts/Mart Light.otf") format("0tf");
-  font-weight: normal;
+  src: url("../../fonts/Mart Light.otf") format("otf");
+  font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Mart SemiBold";
-  src: url("../../fonts/Mart Semi bold.otf") format("0tf");
-  font-weight: normal;
+  src: url("../../fonts/Mart Semi bold.otf") format("otf");
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Mart Ultra";
-  src: url("../../fonts/Mart Ultra.otf") format("0tf");
+  src: url("../../fonts/Mart Ultra.otf") format("otf");
   font-weight: bold;
   font-style: normal;
 }
@@ -61,5 +73,26 @@
   font-family: "Roboto";
   src: url("../../fonts/Roboto-Regular.ttf") format("ttf");
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto 900";
+  src: url("../../fonts/Roboto-Black.ttf") format("ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  src: url("../../fonts/roboto-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("../../fonts/Roboto-Medium.ttf") format("ttf");
+  font-weight: 500;
   font-style: normal;
 }

@@ -51,3 +51,11 @@
 .icon-piple {
   @include sprite($piple)
 }
+
+.icon-star {
+  @include sprite($star)
+}
+
+.icon-star_white {
+  @include sprite($star_white)
+}

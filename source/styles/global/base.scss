@@ -1,12 +1,10 @@
 body {
-  font-family: $ff_main, ;
-  font-size: 1rem;
-  line-height: 1.2;
-  color: #282b4f;
+  overflow-x: hidden;
 }
 
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *, *:before, *:after {

@@ -1,11 +1,48 @@
 .about{
-  padding: 80px 0;
 
-  .about__text {
-    text-align: left;
-    font-family: $ff_steps;
-    font-size: 1.5rem;
-    line-height: 28px;
-    margin: 0;
+  @media only screen and (max-width : 800px) {
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .about__text {
+      text-align: left;
+      font-family: $ff_steps;
+      font-size: 1.5rem;
+      line-height: 28px;
+      margin: 0;
+    }
+
+    .button--blue {
+      display: none;
+    }
+
+    @media only screen and (max-width : 800px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px 15px;
+
+      .button--blue {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .title__header {
+        padding-top: 36px;
+        font-family: $ff_mart-book;
+        font-size: 1.875rem;
+      }
+
+      .about__text {
+        font-family: $ff_text-light;
+        font-size: 1.0625rem;
+        line-height: 27px;
+
+      }
+    }
   }
 }

@@ -5,28 +5,6 @@
   text-transform: uppercase;
   font-size: 3rem;
   line-height: 64px;
-  font-weight: initial;
+  font-weight: 300;
 
-  &__header {
-    margin: 0;
-    font-size: 2.25rem;
-    line-height: 1;
-  }
-
-  &__approach {
-    font-size: 2.125rem;
-    font-family: $ff_main-bold;
-    line-height: 34px;
-  }
-
-  &__text {
-    font-size: 1.25rem;
-    font-family: $ff_steps;
-  }
-
-  &__details {
-    font-size: 1.125rem;
-    line-height: 27px;
-    font-weight: bold;
-  }
 }

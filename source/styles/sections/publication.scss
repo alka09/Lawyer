@@ -1,0 +1,104 @@
+.publication {
+  padding: 80px 0;
+  color: #282B4F;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .publication__wrap {
+    width: 100%;
+    padding-top: 16px;
+    text-align: left;
+
+    .title__text {
+      font-family: $ff_main;
+      font-weight: 300;
+      font-size: 1.5rem;
+      padding: 0;
+      margin: 0;
+
+      @media only screen and (min-width : 375px) and (max-width : 500px) {
+        font-family: $ff_light;
+        font-size: 1.125rem;
+      }
+    }
+
+    .publication__text {
+      font-family: $ff_text-light;
+      font-size: 1.5rem;
+      line-height: 28px;
+      padding:8px 0 0 0;
+      margin: 0;
+      text-transform: none;
+    }
+
+    .publication__wrap--title {
+      font-size: 2.125rem;
+      font-family: $ff_main;
+      line-height: 46px;
+      padding: 0;
+      margin: 0;
+      text-transform: none;
+
+      @media only screen and (min-width : 375px) and (max-width : 500px) {
+        font-family: $ff_mart-book;
+        font-size: 1.875rem;
+      }
+    }
+
+    .title__details {
+      font-family: $ff_steps;
+      font-size: 1.5rem;
+      line-height: 27px;
+      font-weight: bold;
+      color: #F6A278;
+      text-transform: none;
+      padding-top: 8px;
+    }
+  }
+
+  .button--orange {
+    margin-top: 24px;
+  }
+
+  @media only screen and (min-width : 375px) and (max-width : 800px) {
+    padding: 60px 0;
+
+    .container {
+      padding: 15px;
+    }
+
+    .title__header {
+      font-family: $ff_mart-book;
+      font-size: 1.875rem;
+    }
+
+    .title__text {
+      font-family: $ff_light;
+      font-size: 1.125rem;
+    }
+
+    .publication__wrap--title {
+      font-family: $ff_mart-book;
+      font-size: 1.875rem;
+    }
+
+    .publication__text {
+      font-size: 1.0625rem;
+    }
+
+    .title__details {
+      font-size: 1.25rem;
+      font-family: $ff_text-roboto-medium !important;
+    }
+
+    .button--orange {
+      display: inline-block;
+      width: 290px;
+    }
+  }
+}

@@ -1,29 +1,52 @@
 .nav {
   display: inline-block;
   vertical-align: top;
-  padding-top: 7px;
-  margin-right: 15px;
 
-  @media (max-width: 1000px) {
-    margin-bottom: 25px;
+  @media (max-width: 1200px) {
+    padding-right: 10px;;
   }
 
-  &__link {
-    display: inline-block;
-    vertical-align: top;
-    padding: 8px;
-    font-family: $ff_main;
-    font-size: 1.3125rem;
-    line-height: 28px;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    text-transform: capitalize;
-    color: #424242;
-    transition: 0.3s;
+  @media only screen and (min-width : 375px) and (max-width : 600px) {
+    /* стили */
+  }
 
-    &:hover,
-    &--active {
-      color: #de2b24;
+  @media (max-width: 1200px) {
+
+  }
+
+
+  .nav__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    .nav__link--menu {
+      font-family: $ff_main;
+      font-size: 1.3125rem;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      text-transform: capitalize;
+      color: #424242;
+      transition: 0.3s;
+      padding-right: 16px;
+
+      &:hover {
+        color: #F6A278;
+      }
+
+      @media (max-width: 1200px) {
+        padding-right: 10px;
+      }
+
+      @media only screen and (min-width : 375px) and (max-width : 800px) {
+        /* стили */display: none;
+      }
+
     }
+
+
   }
 }

@@ -1,6 +1,49 @@
 .approach {
-  padding: 86px 0 94px;
   background-color: #E7E9EE;
+
+  .title {
+    margin-bottom: 56px;
+  }
+
+  @media only screen and (max-width : 800px) {
+    padding: 36px 0;
+
+    .title__header {
+      font-family: $ff_mart-book;
+      font-size: 1.875rem;
+    }
+
+    .approach__wrapper {
+      flex-direction: column;
+      justify-content: center;
+
+      .square {
+        width: 346px;
+        height: 375px;
+        margin-bottom: 30px;
+
+        .title__approach {
+          font-family: $ff_mart-book;
+          font-size: 1.875rem;
+          line-height: 35px;
+          padding: 16px 0 0;
+        }
+
+        .title__text {
+          font-family: $ff_text;
+          font-size: 1.0625rem;
+        }
+
+        .title__details {
+          font-family: $ff_text-roboto-black;
+          font-size: 1.25rem;
+          line-height: 27px;
+        }
+      }
+    }
+
+
+  }
 
   &__wrapper {
     display: flex;
@@ -14,15 +57,27 @@
       box-shadow: 0 4px 31px rgba(0, 0, 0, 0.15);
       border: 1px solid #DEDEDE;
       box-sizing: border-box;
-      padding: 53px 53px;
+      padding: 36px 53px 53px 53px;
 
       .title__approach {
+        font-family: $ff_main;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 33px;
         padding-top: 32px;
       }
 
       .title__text {
+        font-family: $ff_steps;
+        font-size: 1.25rem;
+        line-height: 27px;
         margin: 0;
         padding: 24px 0;
+      }
+
+      .title__details {
+        font-family: $ff_text-roboto-black;
+        font-size: 1.25rem;
       }
 
       &__pinky {
@@ -42,6 +97,10 @@
 
         .title__details {
           color: #FFFFFF;
+        }
+
+        .title__text {
+          color: #ffffff;
         }
       }
 
